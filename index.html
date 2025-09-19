@@ -21,6 +21,44 @@
     <link
         href="https://fonts.googleapis.com/css2? family=Covered+By+Your+Grace&family=Open+Sans:wght@300;400;600;700;800&family=Parisienne&display=swap"
         rel="stylesheet">
+      <title>Prueba de Chat Copilot</title>
+
+  <!-- Script del widget de Copilot Studio -->
+  <script id="Microsoft_Omnichannel_LCWidget"
+    src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"
+    data-app-id="f7c52917-3a8c-4a22-acdf-fd429402b2c7"
+    data-lcw-version="prod"
+    data-org-id="afdaec26-8d3c-ee11-94d3-002248debce1"
+    data-org-url="https://m-afdaec26-8d3c-ee11-94d3-002248debce1.br.omnichannelengagementhub.com"
+    async
+    onerror="(function(el){
+      el.parentNode.removeChild(el);
+      var s=document.createElement('script');
+      s.src='https://ocprodpublicsamgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';
+      s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');
+      s.setAttribute('data-app-id', 'f7c52917-3a8c-4a22-acdf-fd429402b2c7');
+      s.setAttribute('data-lcw-version', 'prod');
+      s.setAttribute('data-org-id', 'afdaec26-8d3c-ee11-94d3-002248debce1');
+      s.setAttribute('data-org-url', 'https://m-afdaec26-8d3c-ee11-94d3-002248debce1.br.omnichannelengagementhub.com');
+      document.body.appendChild(s);
+    })(this);">
+  </script>
+
+  <!-- Contexto ficticio del usuario -->
+  <script>
+    function contextProvider() {
+      return {
+        'person_id': { value: '99999999', isDisplayable: true },
+        'rol': { value: 'OPERADOR', isDisplayable: true }
+      };
+    }
+
+    window.addEventListener("lcw:ready", function () {
+      Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
+      Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
+    });
+  </script>
+
 </head>
 
 <body>
