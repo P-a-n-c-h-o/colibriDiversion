@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <title>Wemox_</title>
     <meta charset="utf-8">
     <meta name="facebook-domain-verification" content="pfkush9zcpv2qd92fdcrhbr49wme2v" />
     <link rel="stylesheet" type="text/css" href="css/estilos2colibri1.css">
     <link rel="stylesheet" type="text/css" href="css/1normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/copilot-chat.css">
     <link rel="icon" href="multi/logo.png">
     <meta name="keywords" content="inflabe,metegol,tejo,ping pong">
     <meta name="description"
@@ -19,26 +19,31 @@
     <script src="https://kit.fontawesome.com/03397f4181.js" crossorigin="anonymous"></script>
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
     <link
-        href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Open+Sans:wght@300;400;600;700;800&family=Parisienne&display=swap"
+        href="https://fonts.googleapis.com/css2? family=Covered+By+Your+Grace&family=Open+Sans:wght@300;400;600;700;800&family=Parisienne&display=swap"
         rel="stylesheet">
-    <!-- Script del widget de Copilot Studio -->
-<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js"></script>
-    <!-- Contexto ficticio del usuario -->
-    <script>
-      function contextProvider() {
-        return {
-          'peopleId': { value: 35.001 , isDisplayable: true },
-          'role': { value: "ADMINISTRADOR", isDisplayable: true },
+      <title>Prueba de Chat Copilot</title>
+
+  <!-- Script del widget de Copilot Studio -->
+<script id="Microsoft_Omnichannel_LCWidget" src="https://oc-cdn-public-sam.azureedge.net/livechatwidget/scripts/LiveChatBootstrapper.js" onerror="(function(el){el.parentNode.removeChild(el);var s=document.createElement('script');s.src='https://ocprodpublicsamgs.blob.core.windows.net/livechatwidget/scripts/LiveChatBootstrapper.js';s.setAttribute('id', 'Microsoft_Omnichannel_LCWidget');s.setAttribute('data-app-id', 'fa54e582-80d7-4c85-a876-83c1cd755a4e');s.setAttribute('data-lcw-version', 'prod');s.setAttribute('data-org-id', 'afdaec26-8d3c-ee11-94d3-002248debce1');s.setAttribute('data-org-url', 'https://m-afdaec26-8d3c-ee11-94d3-002248debce1.br.omnichannelengagementhub.com');document.body.appendChild(s);})(this);" data-app-id="fa54e582-80d7-4c85-a876-83c1cd755a4e" data-lcw-version="prod" data-org-id="afdaec26-8d3c-ee11-94d3-002248debce1" data-org-url="https://m-afdaec26-8d3c-ee11-94d3-002248debce1.br.omnichannelengagementhub.com" async></script>
+
+  <!-- Contexto ficticio del usuario -->
+  <script>
+    function contextProvider() {
+      return {
+        'peopleId': { value: 35.001 , isDisplayable: true },
+        'role': { value: "ADMINISTRADOR", isDisplayable: true },
           'VarRespuestaCrisF': { value: "Bienvenido CRRRRRIIIIISSSSSSSS se te extrañó en el equipo...!!!!!" , isDisplayable: true } 
-        };
-      }
-      window.addEventListener("lcw:ready", function () {
-        Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
-        Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
-        document.body.classList.add('chat-active'); // Fondo animado cuando el chat está activo
-      });
-    </script>
+      };
+    }
+
+    window.addEventListener("lcw:ready", function () {
+      Microsoft.Omnichannel.LiveChatWidget.SDK.setContextProvider(contextProvider);
+      Microsoft.Omnichannel.LiveChatWidget.SDK.startChat();
+    });
+  </script>
+
 </head>
+
 <body>
     <header class="header" id="inicio">
         <img src="css/hamburgesa.svg" alt="" class="hamburguer">
@@ -55,6 +60,7 @@
             <p class="copy"> Comprometidos con tus necesides desde 1985 </p>
         </div>
     </header>
+
     <main>
         <section class="contenedor-p" id="productos">
             <h2 class="subtitulo">Nuestros Productos</h2>
@@ -78,6 +84,8 @@
                     </div>
                 </div>
             </div>
+
+
             <div class="contenedor-productos">
                 <img src="multi/productos.jpg" alt="">
                 <div class="productos-produc">
@@ -98,6 +106,8 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
         <section class="gallery" id="Galeria">
             <div class="contenedor">
@@ -111,6 +121,7 @@
                     <img src="multi/5.png" alt="" class="img-galeria">
                 </div>
             </div>
+
         </section>
         <section class="imagen-light">
             <img src="css/bx-x.svg" alt="" class="close">
@@ -136,7 +147,9 @@
                     <h3 class="n-We">Evento en general</h3>
                 </div>
             </section>
+
         </section>
+
     </main>
     <footer id="contacto">
         <div class="contenedor footer-content">
@@ -144,50 +157,59 @@
                 <h2 class="brand">COLIBRÍ</h2>
                 <P>Somos expertos en ayudarte a realizar tu evento</P>
             </div>
+
             <div class="social-media">
                 <a href="https://www.facebook.com/colibri.diversion.9" class="social-media-icon">
                     <i class='bx bxl-facebook-square bx-tada '></i>
                 </a>
+
                 <a href="https://www.instagram.com/" class="social-media-icon">
                     <i class='bx bxl-instagram bx-tada '></i>
                 </a>
+
                 <a href="https://m.me/colibri.diversion.9" class="social-media-icon">
                     <i class='bx bxl-messenger bx-tada'></i>
                 </a>
+
                 <a href="whatsapp://send?text=&phone=+54 2615917630&abid=+54 2616356990" class="social-media-icon">
                     <i class='bx bxl-whatsapp bx-tada'></i>
                 </a>
                 <a href="tel:+54 2615917630" class="social-media-icon">
                     <i class='bx bxs-phone-call bx-flashing'></i>
                 </a>
+
             </div>
         </div>
         <div class="line"></div>
     </footer>
+
     <script src="js/menu1colibi1.js"></script>
     <script src="js/lightbox1colibri1.js"></script>
+
     <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '767490976218901',
-          xfbml      : true,
-          version    : 'v23.0'
-        });
-        FB.AppEvents.logPageView();
-      };
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <div
-      class="fb-like"
-      data-share="true"
-      data-width="450"
-      data-show-faces="true">
-    </div>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '767490976218901',
+      xfbml      : true,
+      version    : 'v23.0'
+    });
+    FB.AppEvents.logPageView();
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
 </body>
+
 </html>
