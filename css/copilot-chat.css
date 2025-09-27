@@ -1,0 +1,138 @@
+/* --- Estilo Futurista y Original para Chat Widget Copilot Studio --- */
+
+/* Fondo animado para el área del chat */
+.copilot-chat-container {
+  background: linear-gradient(135deg, #181d3f 0%, #141e30 100%);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 0 18px #33e1ff65;
+  backdrop-filter: blur(8px);
+  border-radius: 22px;
+  border: 2px solid rgba(51, 225, 255, 0.22);
+  padding: 20px 18px 18px 18px;
+  max-width: 390px;
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 9999;
+  animation: appearChat 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+  overflow: hidden;
+}
+
+@keyframes appearChat {
+  0% { transform: translateY(50px) scale(0.8); opacity: 0; }
+  100% { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+/* Encabezado con efecto neón */
+.copilot-chat-header {
+  color: #86e2ff;
+  font-size: 1.7rem;
+  text-shadow: 0 0 12px #33e1ff, 0 0 2px #fff;
+  margin-bottom: 13px;
+  letter-spacing: 2.5px;
+  font-family: 'Covered By Your Grace', 'Open Sans', cursive;
+}
+
+/* Burbuja del usuario */
+.copilot-chat-bubble.user {
+  background: linear-gradient(90deg, #33e1ff 0%, #181d3f 120%);
+  color: #fff;
+  border-radius: 16px 16px 2px 16px;
+  box-shadow: 0 0 12px #33e1ffbb;
+  padding: 13px 18px;
+  margin-bottom: 12px;
+  margin-left: 65px;
+  animation: bubblePop 0.55s;
+  font-size: 1.05rem;
+}
+
+/* Burbuja del bot */
+.copilot-chat-bubble.bot {
+  background: linear-gradient(100deg, #181d3f 60%, #33e1ff 140%);
+  color: #fff;
+  border-radius: 16px 2px 16px 16px;
+  box-shadow: 0 0 12px #33e1ff99;
+  padding: 13px 18px;
+  margin-bottom: 12px;
+  margin-right: 65px;
+  animation: bubblePop 0.55s;
+  font-size: 1.05rem;
+}
+
+@keyframes bubblePop {
+  0% { transform: scale(0.82) translateY(15px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+/* Input futurista */
+.copilot-chat-input {
+  background: rgba(34, 39, 52, 0.93);
+  color: #33e1ff;
+  border: 2px solid #33e1ff;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-top: 14px;
+  outline: none;
+  font-size: 1.08rem;
+  box-shadow: 0 0 10px #33e1ff55;
+  transition: box-shadow 0.3s, border-color 0.3s;
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+}
+
+.copilot-chat-input:focus {
+  box-shadow: 0 0 18px #33e1ffcc;
+  border-color: #86e2ff;
+}
+
+/* Botón enviar con efecto neón y animación */
+.copilot-chat-send-btn {
+  background: linear-gradient(87deg, #33e1ff 50%, #181d3f 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  margin-left: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 0 12px #33e1ff99, 0 0 1px #fff;
+  transition: background 0.2s, box-shadow 0.2s;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+  font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+}
+
+.copilot-chat-send-btn:hover {
+  background: linear-gradient(87deg, #181d3f 20%, #33e1ff 80%);
+  box-shadow: 0 0 24px #33e1ffcc;
+}
+
+/* Scrollbar futurista */
+.copilot-chat-container ::-webkit-scrollbar {
+  width: 8px;
+  background: #22273f;
+}
+.copilot-chat-container ::-webkit-scrollbar-thumb {
+  background: #33e1ff;
+  border-radius: 8px;
+}
+
+/* Avatares con borde neón */
+.copilot-chat-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #33e1ff;
+  box-shadow: 0 0 8px #33e1ff99;
+  margin-right: 8px;
+}
+
+/* Fondo animado (opcional) para el cuerpo cuando el chat está abierto */
+body.chat-active {
+  background: linear-gradient(120deg, #181d3f 0%, #33e1ff 100%);
+  animation: bgMove 12s ease-in-out infinite alternate;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
