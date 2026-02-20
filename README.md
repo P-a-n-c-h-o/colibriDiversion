@@ -10,7 +10,7 @@
 
 1. Clone Repository
 ```
-git clone https://github.com/themewagon/Pixelize.git
+git clone https://github.com/P-a-n-c-h-o/colibriDiversion.git
 ```
 2. Install Dependencies
 ```
