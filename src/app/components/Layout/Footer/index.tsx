@@ -72,7 +72,7 @@ const Footer = () => {
               className="text-lightgrey"
             />
             <p className="text-base font-normal text-offwhite text-center">
-              Panamericana 7810, Las Heras, Mendoza, Argentina
+              Panamericana 7810, Las Heras, Mendoza, Argentina 
             </p>
           </div>
           {/* Teléfono */}
