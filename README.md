@@ -1,10 +1,10 @@
 # Pixelize
 #### Preview
 
- - [Demo](https://themewagon.github.io/Pixelize/)
+ - [Demo]()
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/Pixelize/)
+ - [Download from ThemeWagon]()
 
 ## Getting Started
 
