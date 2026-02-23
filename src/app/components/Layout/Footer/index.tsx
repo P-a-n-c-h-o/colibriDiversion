@@ -106,7 +106,7 @@ const Footer = () => {
               // onClick={(e) => e.preventDefault()}
             >
               <p className="text-base font-normal text-offwhite hover:text-primary dark:hover:text-primary text-center">
-                empathy.jf@gmail.com
+                empathyprueba.jf@gmail.com
               </p>
             </Link>
           </div>
